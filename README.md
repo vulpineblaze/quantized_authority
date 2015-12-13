@@ -10,15 +10,22 @@ An alien has set up a relay where you (player) act as a God to some neolithic pe
 ### Controls:
 
 #### Yes:
+
  * Enter, Y , n
+
 #### No:
+
  * Space, N , n 
+
 ## Design Doc:
 
+
 ### Startup screen:
+
 Alien explains the game, controls, then laod next screen.
 
 ### Main screen:
+
 Image showing inital settlement. 
 HUD bar shows food, water, wealth, etc.. of inhabittant
 HUD abr shows % faith in themselves, amnd % faith in you (player).
@@ -29,7 +36,7 @@ settlement grows based on player answers.
 
 cataspthies occur randomly, and affect settlement 
 
-game continues until:
+#### game continues until:
  * setllement reaches some "maxiumum"
  * settlement has all inhabitant die
  * settlement loses all faith in player and destroys relay
