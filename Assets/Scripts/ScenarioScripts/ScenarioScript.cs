@@ -43,4 +43,7 @@ public class ScenarioScript : MonoBehaviour {
 		scens[index].gameObject.SetActive(true);
 		Debug.Log("Set scenario:"+index+" active. "+scens[index].gameObject.name);
 	}
+
+	
+
 }

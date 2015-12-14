@@ -72,33 +72,53 @@ public class GenericScenarioScript : MonoBehaviour {
 	    // Draw a button to start the game
 	    if (GUI.Button(
 	      // Center in X, 2/3 of the height in Y
-	      new Rect(1*Screen.width / 3 - (buttonWidth / 2), (2 * Screen.height / 3) - (buttonHeight / 2), buttonWidth, buttonHeight),
+	      new Rect(1*Screen.width / 3 - (buttonWidth / 2), (3 * Screen.height / 4) - (buttonHeight / 2), buttonWidth, buttonHeight),
 	      "Yes"
 	      ))
 	    {
 	      // On Click, load the first level.
 	      // Application.LoadLevel("Stage1"); // "Stage1" is the scene name
 	    	resources.food += yes.food;
+	    	resources.water += yes.water;
+	    	resources.defense += yes.defense;
+	    	resources.stockpile += yes.stockpile;
+	    	resources.religion += yes.religion;
+	    	resources.education += yes.education;
+	    	resources.lumber += yes.lumber;
+	    	resources.gold += yes.gold;
+	    	resources.population += yes.population;
+	    	resources.faithInYou += yes.faithInYou;
+	    	resources.faithInSelf += yes.faithInSelf;
 	    	closeOut();
 
 	    }
 
 	    if (GUI.Button(
 	      // Center in X, 2/3 of the height in Y
-	      new Rect(2*Screen.width / 3 - (buttonWidth / 2), (2 * Screen.height / 3) - (buttonHeight / 2), buttonWidth, buttonHeight),
+	      new Rect(2*Screen.width / 3 - (buttonWidth / 2), (3 * Screen.height / 4) - (buttonHeight / 2), buttonWidth, buttonHeight),
 	      "No"
 	      ))
 	    {
 	      // On Click, load the first level.
 	      // Application.LoadLevel("Stage1"); // "Stage1" is the scene name
 	    	resources.food += no.food;
+	    	resources.water += no.water;
+	    	resources.defense += no.defense;
+	    	resources.stockpile += no.stockpile;
+	    	resources.religion += no.religion;
+	    	resources.education += no.education;
+	    	resources.lumber += no.lumber;
+	    	resources.gold += no.gold;
+	    	resources.population += no.population;
+	    	resources.faithInYou += no.faithInYou;
+	    	resources.faithInSelf += no.faithInSelf;
 	    	closeOut();
 	    }
 
 	}
 
 	void closeOut(){
-		GameObject.Find("Timer").GetComponent<TimerScript>().RunFunction();
+		GameObject.Find("Timer").GetComponent<TimerScript>().DoCircumstance();
 		gameObject.SetActive(false);
 	}
 }

@@ -1,0 +1,97 @@
+Initialize engine version: 5.1.1f1 (2046fc06d4d8)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 730 (ID=0xf02)
+    Vendor:   NVIDIA
+    VRAM:     2000 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\dev\quantized_authority\Build\quan_auth_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\dev\quantized_authority\Build\quan_auth_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\dev\quantized_authority\Build\quan_auth_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\dev\quantized_authority\Build\quan_auth_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\dev\quantized_authority\Build\quan_auth_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\dev\quantized_authority\Build\quan_auth_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\dev\quantized_authority\Build\quan_auth_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\dev\quantized_authority\Build\quan_auth_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\dev\quantized_authority\Build\quan_auth_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\dev\quantized_authority\Build\quan_auth_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.053 seconds
+desktop: 1920x1080 60Hz; virtual: 3520x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\dev\quantized_authority\Build\quan_auth_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\dev\quantized_authority\Build\quan_auth_Data\Managed\System.dll (this message is harmless)
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.858286 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at (wrapper stelemref) object:stelemref (object,intptr,object)
+  at TimerScript.PopulateChildren () [0x00000] in <filename unknown>:0 
+  at TimerScript.OnLevelWasLoaded (Int32 level) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 272.
+Total: 0.296422 ms (FindLiveObjects: 0.022579 ms CreateObjectMapping: 0.018116 ms MarkObjects: 0.245224 ms  DeleteObjects: 0.009451 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GenericScenarioScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GenericCircumstanceScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GenericScenarioScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GenericScenarioScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GenericCircumstanceScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GenericCircumstanceScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Set scenario:2 active. Stockpile01
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Set scenario:1 active. Grain02
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Set scenario:0 active. Burn01
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Set scenario:2 active. Stockpile01
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Set scenario:1 active. Burn02
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Set scenario:1 active. Grain02
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Set scenario:0 active. Grain01
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+

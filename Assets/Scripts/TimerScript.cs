@@ -7,10 +7,18 @@ public class TimerScript : MonoBehaviour {
 
 	public bool runThis = true;
 
+	private int skips = 1;
+
+	public int chanceToCircumstance=10;
+
+	public Transform settlement ;
+	private SettlementScript ss;
+
 	// Use this for initialization
 	void Start () {
 		children = new Transform[transform.childCount];
 		PopulateChildren();
+		ss = settlement.GetComponent<SettlementScript>();
 	    
 	}
 	
@@ -19,15 +27,18 @@ public class TimerScript : MonoBehaviour {
 		if (children == null || children.Length == 0){
 			PopulateChildren();
 		}
-	    
+	    ss = settlement.GetComponent<SettlementScript>();
     }
 	
 	// Update is called once per frame
 	void Update () {
 
 		if(runThis){
-			RunFunction();
+			DoScenario();
 			runThis = false;
+		}
+		if(settlement != null && ss == null){
+			ss = settlement.GetComponent<SettlementScript>();
 		}
 	}
 
@@ -37,14 +48,33 @@ public class TimerScript : MonoBehaviour {
 		}
 	}
 
-	public void RunFunction(){
+	public void DoScenario(){
 
-		// play busy animation
 
-		//increment year
+		
+		Invoke("DoScen", 1.0f);
+	}
 
-		//activate a scen || circ
+	public void DoCircumstance(){
+		if(chanceToCircumstance > Random.Range(0,99)){
+			CircumstanceScript component2 = children[1].gameObject.GetComponent<CircumstanceScript>();
+			component2.DoThis();
+		}else{
+			DoScenario();
+		}
+	}
+
+	void DoScen(){
+
+		if(skips > 0){
+			skips--;
+		}else 
+
+		ss.OneYear();
+
 		ScenarioScript component = children[0].gameObject.GetComponent<ScenarioScript>();
 		component.DoThis();
+
+
 	}
 }

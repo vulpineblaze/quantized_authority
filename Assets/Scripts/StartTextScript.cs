@@ -16,9 +16,9 @@ public class StartTextScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		alien_text += "You have been chosen to lead a pre-industrail civilization to prosperity\n" ;
-		alien_text += "They must survive and become tecnhological quickly\n" ;
-		alien_text += "So that we may best help them overcome the challegdes of space travel\n\n" ;
+		alien_text += "You have been chosen to lead a pre-industrial civilization to prosperity\n" ;
+		alien_text += "They must survive and become technological quickly\n" ;
+		alien_text += "So that we may best help them overcome the challenges of space travel\n\n" ;
 		alien_text += "Sadly, the Quantum Entanglement Relay is limited to Yes and No answers\n" ;
 		alien_text += "  to their questions. Good Luck!\n" ;
 		alien_text += "" ;
@@ -49,14 +49,7 @@ public class StartTextScript : MonoBehaviour {
 	      	quan_GUISkin.FindStyle("MostText")
 	      );
 
-	    GUI.Label(
-	      // X, Y, Width, Height
-	      new Rect(pos.x * 2 , 
-	      	pos.y , 
-	      	size.x, 
-	      	size.y),
-	      	"Resources: " 
-	      );
+
 
 
 
